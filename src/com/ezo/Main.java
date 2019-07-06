@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in); //создаём переменную Scanner,чтобы реализовать ввод информации пользователем
+        Scanner in = new Scanner(System.in);
         Counter counter = new Counter();
 
-        System.out.println("Hello! Please write something."); //выводим сообщение "Hello! Please write something."
-        int result = counter.symbols(in.nextLine()); //полученное сообщение передаём в класс Counter для работы с ним
+        System.out.println("Hello! Please write something.");
+        int result = counter.symbols(in.nextLine()); //полученное от пользователя сообщение передаём в класс Counter для работы с ним
 
         if (result == 0) { //если получаем результат 0
             System.out.println("Empty."); //выводим сообщение о том, что в ведённом пользователем сообщении нет символов "A"
